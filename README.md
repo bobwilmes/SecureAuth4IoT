@@ -1,5 +1,4 @@
-# SecureAuth4IoT
-Secure Authentication for IoT Devices using Visual Cues
+# Project: SecureAuth4IoT
 
 ##	Executive Summary
 
@@ -11,8 +10,12 @@ The impetus for this project is the California IoT law ([SB327: Information Priv
 
 The Bluetooth communications between the Pixel 3 cell phone and the Micro Bit IoT device will be performed over a GATT profile using Bluetooth which requires pairing between the Pixel 3 and the Micro Bit device.  This is performed by resetting the hardware on the Micro Bit device and initiating a Bluetooth scan on the Pixel 3. The user then picks the Micro Bit device from any listed on the scan from the Pixel 3.  Once the initial communication is started, the Micro Bit will generate
 a six digit numeric code which is entered into the Android app to complete the communications pairing. 
+![Google Pixel 3](https://images-na.ssl-images-amazon.com/images/I/71JvslYorPL._AC_SL1500_.jpg)
+Picture 1 - Google Pixel 3 mobile phone
 
-![BBC Micro Bit](https://en.wikipedia.org/wiki/File:BBC_Micro_Bit_with_original_Packaging.jpg)
+
+![BBC Micro:Bit IoT Device](https://images-na.ssl-images-amazon.com/images/I/515+1Wrp++L._AC_.jpg)
+Picture 2 - BBC Micro:Bit IoT Device
 
 The Micro Bit has a panel with a 5 by 5 element LED display. The authentication protocol will randomly generate a 25 bit number which will indicate which combination of LED's on the display will be lit. That number will be sent over a secure channel to the Micro Bit device and the LED's will lite. The end user will then use a finger tip to select the LED's as displayed on the Pixel 3 mobile device.  If selected correctly, the Pixel 3 will send an unlock signal to the MicroBit and display a check mark to indicate authentication success. If the authentication ws unsuccessful or communications is lost, the Micro Bit will display an "X" character on the 5 by 5 LED panel.
 
@@ -35,4 +38,5 @@ The Micro Bit has a panel with a 5 by 5 element LED display. The authentication 
 ## Summary
 
 By demonstrating the use of a pattern of LED's on the Micro Bit device, this technique could be expanded for other uses of cues for visual authentication. For example, the camera on the Pixel 3 mobile phone could be programmed to read the pattern of LED's, thereby removing potential errors in the process of capturing the on/off status on the Android application. This would potentially be a novel way for IoT devices to securely authenticate if they lacked keyboards or other sensory inputs.
+
 
